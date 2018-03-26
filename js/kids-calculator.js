@@ -40,4 +40,5 @@ function showPrimeNumberTo(n) {
         }
 }
 }
+
 showPrimeNumberTo(25);
