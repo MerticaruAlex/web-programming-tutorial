@@ -13,10 +13,10 @@ function  countTo(n)
      var suma = a ;// nr cel mai mare
      var degete= b ; // nr cel mai mic
      if(a<b){
-         suma =a;
+         suma =b;
          degete = a;
      }
-     for(; degete>0; ){
+     while(; degete>0; ){
          degete--;
          suma++;
          console.info( suma +'-au mai ramas ' + degete +  ' degetele ');
