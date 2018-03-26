@@ -10,11 +10,17 @@ function  countTo(n)
  {
      console.info('Primul numar este', +a);
      console.info('Al doilea numar este', +b);
-     for(; b>0; ){
-         b--;
-         a++;
-         console.info( a +'-au mai ramas ' + b +  ' degetele ');
+     var suma = a ;// nr cel mai mare
+     var degete= b ; // nr cel mai mic
+     if(a<b){
+         suma =a;
+         degete = a;
      }
-     console.info('Suma este:',a);
+     for(; degete>0; ){
+         degete--;
+         suma++;
+         console.info( suma +'-au mai ramas ' + degete +  ' degetele ');
+     }
+     console.info('Suma este:',suma);
  }
- var count= addNumbers(6,8);
+ var count= addNumbers(2,6);
