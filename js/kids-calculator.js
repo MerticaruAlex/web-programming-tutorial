@@ -23,4 +23,21 @@ function  countTo(n)
      }
      console.info('Suma este:',suma);
  }
- var count= addNumbers(2,6);
+ //var count= addNumbers(45,32);
+function isNumberPrime(n){
+    for(var i=2;i<n;i++) {
+        if (n % i == 0) {
+            return false;
+        }
+    }
+    return true;
+}
+function showPrimeNumberTo(n) {
+    for(var i=1;i<=n;i++){
+
+        if(isNumberPrime(i)){
+        console.info(i);
+        }
+}
+}
+showPrimeNumberTo(25);
